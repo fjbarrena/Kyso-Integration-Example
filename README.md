@@ -21,9 +21,9 @@ jobs:
   Push-To-Kyso:
     runs-on: node:16.14.0-slim
     steps:
-      - npm install -g kyso
-      - kyso login --kysoInstallUrl https://kyso.io --provider kyso --username [YOUR_EMAIL] --token [YOUR_ACCESS_TOKEN]
-      - kyso push
+      - run: npm install -g kyso
+      - run: kyso login --kysoInstallUrl https://kyso.io --provider kyso --username [YOUR_EMAIL] --token [YOUR_ACCESS_TOKEN]
+      - run: kyso push
 ```
 
 ## A full example 
@@ -56,9 +56,9 @@ jobs:
   Push-To-Kyso:
     runs-on: node:16.14.0-slim
     steps:
-      - npm install -g kyso
-      - kyso login --kysoInstallUrl https://kyso.io --provider kyso --username eduardo.suarez.guanes@gmail.com --token 824fb205-e725-4dbf-8e1f-a2a3a3b710fd
-      - kyso push
+      - run: npm install -g kyso
+      - run: kyso login --kysoInstallUrl https://kyso.io --provider kyso --username eduardo.suarez.guanes@gmail.com --token 824fb205-e725-4dbf-8e1f-a2a3a3b710fd
+      - run: kyso push
 ```
 
 If we execute the CI/CD pipeline we will see something similar to the next log
