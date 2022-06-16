@@ -1,0 +1,6 @@
+main: index.html
+title: "My Awesome Report uploaded using Github Actions"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquam ipsum et lacus porta porttitor."
+organization: eduardo-suarez-guanes
+team: public-examples
+type: website
