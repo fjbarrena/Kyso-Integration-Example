@@ -80,7 +80,7 @@ Processing index.html
 Processing kyso.yaml
 Uploading files. Wait a moment..
 🎉🎉🎉 Report was uploaded to
-https://kyso.io/eduardo-suarez-guanes/public-examples/my-awesome-report-uploaded-using-github-actions
+https://kyso.io/eduardo-suarez-guanes/public-examples/my-awesome-report-uploaded-using-github-actions/share
 🎉🎉🎉
 ```
 
