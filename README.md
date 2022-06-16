@@ -10,9 +10,9 @@ This repository contains an example of how to integrate Kyso with Gitlab CI/CD p
 
 ## How to integrate Kyso and Github Actions
 
-1. Create a .github/workflows directory in your repository on GitHub if this directory does not already exist.
-2. In the .github/workflows directory, create a file named kyso-action.yml.
-3. Copy the following YAML contents into kyso-action.yml:
+1. Create a `.github/workflows` directory in your repository on GitHub if this directory does not already exist.
+2. In the `.github/workflows` directory, create a file named `kyso-action.yml`.
+3. Copy the following YAML contents into `kyso-action.yml`:
 
 ```yaml
 name: Push To Kyso.io
@@ -32,7 +32,7 @@ This repository contains a single report based on [MultiQC](https://multiqc.info
 
 We are using a demo user named *Eduardo Suárez Guanes*, which have an organization named *eduardo-suarez-guanes*. That organization has a team, named *public-examples*, in which we want to upload the report.
 
-So, based on that data, our **kyso.yaml** should be as follows, make special attention to the **organization**, **team** and **type** properties
+So, based on that data, our **kyso.yaml** should be as follows, pay special attention to the **organization**, **team** and **type** properties
 
 ```yaml
 main: index.html
@@ -47,7 +47,7 @@ We, as *Eduardo Suárez Guanes*, and following this [instructions](https://docs.
 
 > That token is currently revoked for security reasons ;)
 
-Then, to upload the report to Kyso we only need to create the `.gitlab-ci.yaml` (or edit your existing one) and add the following stage:
+Then, to upload the report to Kyso we only need to create the `kyso-action.yml` and add the following stage:
 
 ```yaml
 name: Push To Kyso.io
@@ -80,9 +80,9 @@ Processing index.html
 Processing kyso.yaml
 Uploading files. Wait a moment..
 🎉🎉🎉 Report was uploaded to
-https://kyso.io/eduardo-suarez-guanes/public-examples/my-awesome-report
+https://kyso.io/eduardo-suarez-guanes/public-examples/my-awesome-report-uploaded-using-github-actions
 🎉🎉🎉
 ```
 
-As the report is public, you can see the result [here](https://kyso.io/eduardo-suarez-guanes/public-examples/my-awesome-report/share)
+As the report is public, you can see the result [here](https://kyso.io/eduardo-suarez-guanes/public-examples/my-awesome-report-uploaded-using-github-actions/share)
 
