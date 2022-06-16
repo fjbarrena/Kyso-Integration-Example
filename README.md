@@ -19,8 +19,12 @@ name: Push To Kyso.io
 on: [push]
 jobs:
   Push-To-Kyso:
-    runs-on: node:16.14.0-slim
+    runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
       - run: npm install -g kyso
       - run: kyso login --kysoInstallUrl https://kyso.io --provider kyso --username [YOUR_EMAIL] --token [YOUR_ACCESS_TOKEN]
       - run: kyso push
@@ -54,8 +58,12 @@ name: Push To Kyso.io
 on: [push]
 jobs:
   Push-To-Kyso:
-    runs-on: node:16.14.0-slim
+    runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
       - run: npm install -g kyso
       - run: kyso login --kysoInstallUrl https://kyso.io --provider kyso --username eduardo.suarez.guanes@gmail.com --token 824fb205-e725-4dbf-8e1f-a2a3a3b710fd
       - run: kyso push
